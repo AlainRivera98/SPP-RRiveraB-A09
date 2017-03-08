@@ -150,7 +150,7 @@ public class SPPRRiveraBA09 {
         return S; //regresa el array que es suma de las matrices
     }
 
-    //Método mostrar Matriz: muestra en pantalla la matriz creada
+    //Método mostrar Array: muestra en pantalla la matriz creada
     public static void mostrarArray(int [][]matrix){ //Se recibe el objeto matrix
         //Recorre las "i" columnas del array
         for(int i=0; i<matrix.length; i++){
