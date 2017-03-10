@@ -34,8 +34,8 @@ public class SPPRRiveraBA09 {
         
         //Se invoca a métodos asignar tamaño
         System.out.println("Introduzca el tamaño mxn de las matrices (serán del mismo tamaño)\n");
-        m=asignarTamaño("m (número de columnas)");
-        n=asignarTamaño("n (número de filas)");
+        m=asignarTamaño("m (número de filas)");
+        n=asignarTamaño("n (número de columnas)");
         
         //se invoca a métodos para asignar valores
         System.out.println("\nValores de la matriz A: ");
@@ -81,9 +81,9 @@ public class SPPRRiveraBA09 {
          //Crea el array con el tamaño introducido por el usuario anteriormente
         int[][] matrix = new int [m][n];
         
-        //Ciclo for: Nos desplaza en las columnas del array
+        //Ciclo for: Nos desplaza en las filas del array
         for (int i = 0; i < matrix.length; i++) {
-            //Ciclo for: Nos desplzaza en las filas del array
+            //Ciclo for: Nos desplzaza en las columnas del array
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.println("Introduzca valores para la posición "+i+", "+j);
                 //Asigna el valor del array en la posición i, j
@@ -140,9 +140,9 @@ public class SPPRRiveraBA09 {
     //Método suma de matrices: regresa una matriz que es suma de otras 2 que llegan al método
     public static int[][]sumaDeMatrices(int[][]A, int[][]B,int m,int n){
         int[][]S = new int [m][n];
-        //Recorre las "i" columnas del array
+        //Recorre las "i" filas del array
         for(int i=0; i<S.length; i++){
-            //Recorre las "j" filas del array
+            //Recorre las "j" columnas del array
             for (int j=0; j<S[i].length; j++){
                 S[i][j]= A[i][j]+B[i][j];    
             }
@@ -152,9 +152,9 @@ public class SPPRRiveraBA09 {
 
     //Método mostrar Array: muestra en pantalla la matriz creada
     public static void mostrarArray(int [][]matrix){ //Se recibe el objeto matrix
-        //Recorre las "i" columnas del array
+        //Recorre las "i" filas del array
         for(int i=0; i<matrix.length; i++){
-            //Recorre las "j" filas del array
+            //Recorre las "j" columnas del array
             for (int j=0; j<matrix[i].length; j++){
                 System.out.print("["+matrix[i][j]+"]");
                 /*Introduce un salto de línea cada que se rebase la cantidad de columnas del array
